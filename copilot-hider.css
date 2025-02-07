@@ -1,0 +1,30 @@
+/*
+ * Copilot Hider
+ *
+ * Here is a little stylesheet you can use to stop GitHub from forcing Copilot
+ * down your throat every 10 seconds on GitHub.
+ *
+ * Simply have this enabled for all webpages served by GitHub using a stylesheet
+ * injector like Stylus.
+ */
+
+/* Copilot actions in 'Add a comment' */
+button[id^="copilot"],
+
+/* Ask Copilot in code review, Copilot chat, Copilot button on top of age */
+button[class*="Copilot"],
+
+/* "Your Copilot"; doesn't look perfect, but better than nothing I guess */
+li:has([href="/github-copilot/signup"]),
+
+/* "Ask about this diff" */
+li:has(svg.octicon-copilot),
+
+/* Copilot preview on the homepage */
+.copilotPreview__container,
+
+/* Copilot settings, fixes spacing for removed Copilot button top of page */
+div.AppHeader-CopilotChat, li:has([href="/settings/copilot"])
+{
+    display: none !important
+}
