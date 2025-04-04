@@ -11,10 +11,11 @@
 /* Copilot actions in 'Add a comment' */
 button[id^="copilot"],
 
-/* Ask Copilot in code review, Copilot chat, Copilot button on top of age */
+/* Ask Copilot in code review, Copilot chat, Copilot button on top of page */
 button[class*="Copilot"], button[data-testid="more-copilot-button"],
 
-/* Any list element that isn't the "Code, planning, and automation" with a copilot logo or link (e.g. "Ask about this diff", "Your Copilot") */
+/* Any list element that isn't the "Code, planning, and automation" with a
+   copilot logo or link (e.g. "Ask about this diff", "Your Copilot") */
 li:not([data-view-component="true"]):has(svg.octicon-copilot),
 li:not([data-view-component="true"]):has([href="/settings/copilot"]),
 
