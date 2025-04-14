@@ -28,8 +28,8 @@ p:has(span[data-hovercard-type="copilot"]),
 /* Copilot chat */
 div.AppHeader-CopilotChat,
 
-/* Open in Workspace */
-div[data-testid="sidebar-section"] div div:has(a[data-testid="open-in-copilot-workspace-button"]),
+/* Open in Workspace/Agent */
+div[data-testid="sidebar-section"] div div:has(a[data-testid^="open-in-copilot-"]),
 
 /* Copilot settings */
 li.ActionListItem:has(a[href="/settings/copilot"])
