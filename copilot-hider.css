@@ -14,6 +14,9 @@ button[id^="copilot"],
 /* Ask Copilot in code review, Copilot chat, Copilot button on top of page */
 button[class*="Copilot"], button[data-testid="more-copilot-button"],
 
+/* Chat with Copilot Agent Mode */
+div:has(> div[class*="CopilotWorkspaceButton"]),
+
 /* Any list element that isn't the "Code, planning, and automation" with a
    copilot logo or link (e.g. "Ask about this diff", "Your Copilot") */
 li:not([data-view-component="true"]):has(svg.octicon-copilot),
@@ -29,7 +32,7 @@ p:has(span[data-hovercard-type="copilot"]),
 div.AppHeader-CopilotChat,
 
 /* Open in Workspace/Agent */
-div[data-testid="sidebar-section"] div div:has(a[data-testid^="open-in-copilot-"]),
+div[data-testid="sidebar-section"] div div:has(> a[data-testid^="open-in-copilot-"]),
 
 /* Copilot settings */
 li.ActionListItem:has(a[href="/settings/copilot"])
